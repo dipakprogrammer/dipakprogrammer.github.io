@@ -57,7 +57,7 @@ body{
 
 .s_title {
 	font-size: 45px;
-	color:#ec1d24;
+	color:#0490C1;
 	font-family: inherit;
 	text-align:center;
 }
@@ -1809,7 +1809,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 
 	.s_title {
 		font-size: 25px;
-		color:#ec1d24;
+		color:#0490C1;
 		font-family: inherit;
 		text-align:center;
 	}
@@ -2139,7 +2139,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 
 	.s_title {
 		font-size: 25px;
-		color:#ec1d24;
+		color:#0490C1;
 		font-family: inherit;
 		text-align:center;
 	}
@@ -2170,7 +2170,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 @media only screen and (max-width: 736px) {
 	.s_title {
 		font-size: 25px;
-		color:#ec1d24;
+		color:#0490C1;
 		font-family: inherit;
 		text-align:center;
 	}
@@ -2198,7 +2198,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 @media only screen and (max-width: 667px) {
 	.s_title {
 		font-size: 20px;
-		color:#ec1d24;
+		color:#0490C1;
 		font-family: inherit;
 		text-align:center;
 	}
@@ -2248,7 +2248,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 
 .s_title {
 	font-size: 20px;
-	color:#ec1d24;
+	color:#0490C1;
 	font-family: inherit;
 	text-align:center;
 }
@@ -2509,7 +2509,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 
 	.s_title {
 		font-size: 20px;
-		color:#ec1d24;
+		color:#0490C1;
 		font-family: inherit;
 		text-align:center;
 	}
@@ -2544,7 +2544,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 /*** Header ****/
 .s_title {
 	font-size: 20px;
-	color:#ec1d24;
+	color:#0490C1;
 	font-family: inherit;
 	text-align:center;
 }
