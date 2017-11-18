@@ -56,10 +56,12 @@ body{
 }
 
 .s_title {
-	font-size: 45px;
-	color:#0490C1;
-	font-family: inherit;
-	text-align:center;
+		font-size: 45px;
+    color: #0490C1;
+    font-family: initial;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
 }
 
 .search_box{
@@ -175,7 +177,7 @@ body{
 /*** Login ***/
 .register_account h3,.login_panel h3{
 	font-size: 22px;
-	color: #6C6C6C;
+	color: #0490C1;
 	font-family: sans-serif;
 	padding-bottom:.4em;
 }
@@ -625,7 +627,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 	max-width:100%;
 }
 .list_2_of_1  h2 {
-	color:#CC3636;
+	color:#0490C1;
 	font-size:small;
 	font-family: inherit;
 	font-weight : normal;
@@ -647,7 +649,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 		font-size:0.8em;
 		font-family: Arial, "Helvetica Neue", "Helvetica", Tahoma, Verdana, sans-serif;
 		border: 1px solid rgba(0,0,0,0.1);
-        background:#1976D2 url(../images/large-button-overlay.png);
+        background:#0490C1 url(../images/large-button-overlay.png);
         color             : #fff;
         text-shadow:0 -1px 1px rgba(0, 0, 0, 0.25);
 		-moz-border-radius:5px;
@@ -655,8 +657,8 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 		border-radius:5px;
 }
 .list_2_of_1 .button a:hover{
-	    border: 1px solid #4D00A0;
-        background:#1976D2;
+	    border: 1px solid ##0490C1;
+        background:#0490C1;
         text-decoration:none;
 }
 .header_bottom_right_images{
@@ -671,7 +673,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 }
 .content h2{
 	font-size:23px;
-	color:#6C6C6C;
+	color:#0490C1;
 	font-family: sans-serif;
 }
 .content_top{
@@ -692,7 +694,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 .heading h3{
 	font-family: sans-serif;
 	font-size:22px;
-	color:#;
+	color:#0490C1;
 	text-transform:uppercase;
 }
 .sort,.show{
@@ -772,7 +774,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 	line-height: 40px;
 }
 .images_1_of_4  h2 {
-	color: #CC3636;
+	color: #0490C1;
 	font-family: sans-serif;
 	font-size:0.9em;
 	font-weight : normal;
@@ -791,7 +793,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 .images_1_of_4  p span.price{
 	font-size:18px;
 	font-family: sans-serif;
-	color: #CC3636;
+	color: #0490C1;
 	margin-left:15px;
 }
 .images_1_of_4 .button{
@@ -1071,7 +1073,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 .span_3_of_2  h2 {
 	font-family: sans-serif;
 	font-size:1.1em;
-	color: #CC3636;
+	color: #0490C1;
 	font-weight : normal;
 	margin-top: 0px;
 	text-transform:uppercase;
@@ -1092,7 +1094,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 .price p span{
 	font-size:1.5em;
 	font-family: sans-serif;
-	color: #CC3636;
+	color: #0490C1;
 }
 .available{
 	padding:10px 0;
@@ -1368,7 +1370,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 	max-width:100%;
 }
 .span_1_of_3  h3{
-	color: #6C6C6C;
+	color: #0490C1;
 	margin-bottom:0.5em;
 	font-size:1.2em;
 	line-height: 1.2;
@@ -1467,7 +1469,7 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 }
 .support_desc h3{
 	font-size:30px;
-	color: #6C6C6C;
+	color: #0490C1;
 	padding:5px 0;
 	font-family: sans-serif;
 }
@@ -1809,9 +1811,11 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 
 	.s_title {
 		font-size: 25px;
-		color:#0490C1;
-		font-family: inherit;
-		text-align:center;
+    color: #0490C1;
+    font-family: initial;
+    text-align: center;
+    text-transform: uppercase;
+    /*padding-top: 10px;*/
 	}
 	.wrap{
 		width:90%;
@@ -2139,9 +2143,11 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 
 	.s_title {
 		font-size: 25px;
-		color:#0490C1;
-		font-family: inherit;
-		text-align:center;
+    color: #0490C1;
+    font-family: initial;
+    text-align: center;
+    text-transform: uppercase;
+    /*padding-top: 10px;*/
 	}
 	ul.menu.list-unstyled li a {
 		padding: 15px 19px;
@@ -2170,9 +2176,11 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 @media only screen and (max-width: 736px) {
 	.s_title {
 		font-size: 25px;
-		color:#0490C1;
-		font-family: inherit;
-		text-align:center;
+    color: #0490C1;
+    font-family: initial;
+    text-align: center;
+    text-transform: uppercase;
+    /*padding-top: 10px;*/
 	}
 
 	ul.menu.list-unstyled li a {
@@ -2198,9 +2206,11 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 @media only screen and (max-width: 667px) {
 	.s_title {
 		font-size: 20px;
-		color:#0490C1;
-		font-family: inherit;
-		text-align:center;
+    color: #0490C1;
+    font-family: initial;
+    text-align: center;
+    text-transform: uppercase;
+    /*padding-top: 10px;*/
 	}
 
 	ul.menu.list-unstyled li a {
@@ -2248,9 +2258,11 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 
 .s_title {
 	font-size: 20px;
-	color:#0490C1;
-	font-family: inherit;
-	text-align:center;
+	color: #0490C1;
+	font-family: initial;
+	text-align: center;
+	text-transform: uppercase;
+	/*padding-top: 10px;*/
 }
 	.search_box form input[type="text"] {
 		width:78.5%;
@@ -2509,9 +2521,11 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 
 	.s_title {
 		font-size: 20px;
-		color:#0490C1;
-		font-family: inherit;
-		text-align:center;
+    color: #0490C1;
+    font-family: initial;
+    text-align: center;
+    text-transform: uppercase;
+    /*padding-top: 10px;*/
 	}
 
 	.header_top_right {
@@ -2544,9 +2558,11 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 /*** Header ****/
 .s_title {
 	font-size: 20px;
-	color:#0490C1;
-	font-family: inherit;
-	text-align:center;
+	color: #0490C1;
+	font-family: initial;
+	text-align: center;
+	text-transform: uppercase;
+	/*padding-top: 10px;*/
 }
 	.logo{
 		float:inherit;
