@@ -36,8 +36,8 @@ h1 { font: bold 100% sans-serif; letter-spacing: 0.5em; text-align: center; text
 /* table */
 
 table { font-size: 75%; table-layout: fixed; width: 100%; }
-table { border-collapse: separate; border-spacing: 2px; }
-th, td { border-width: 1px; padding: 0.1em; position: relative; text-align: left; }
+table { border-collapse: separate; border-spacing: 1px; }
+th, td { border-width: 1px; padding: 0.0em; position: relative; text-align: left; }
 th, td { border-radius: 0.25em; border-style: none; }
 th { background: #EEE; border-color: #BBB; }
 td { border-color: #DDD; }
