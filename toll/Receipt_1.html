@@ -10,29 +10,44 @@
        
         
 	</head>
-	<body style="width:288px; height:580px;">
+	<body style="width:300px; height:580px;">
         <script src="default_data.js"></script>
         <br/>
-        <div style="font-size:16px;">
-
-            <div style="text-align:center;">
-            <input type="text" id="Plaza_Name" value="RIDCOR TOLL PLAZA" style="border:0;text-align:center;font-size:15px; width:100%;"><br/>
-            <input type="text" id="Plaza_Address" value="Malasar" style="border:0;text-align:center;font-size:15px;width:100%;"<br/>
-            =============================
-            </div>
-            <div>
-                <span>S/N: </span>
-                <div id="snId" style="width: 80%;float: right; text-align: right;"></div>
-                <script type="text/javascript">
-                    document.getElementById("snId").innerHTML = Math.floor(1000000000 + Math.random() * 9000000000);
-                </script>
-            </div>
-            <div>
-                <span style="font-size:13px;height:12px;">Date: </span>
-                <div id="dateId" style="width: 80%;float: right; text-align: right; font-size:13px;height:12px;"></div>
-                <span style="font-size:13px;height:12px;">Expiry: </span>
-                <div id="expId" style="width: 80%;float: right; text-align: right; font-size:13px;height:12px;"></div>
-                <script type="text/javascript">
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+                <td colspan="3" style="border:0; padding:0; margin:0">
+                <input type="text" id="Plaza_Name" value="RIDCOR TOLL PLAZA" style="border:0; text-align:center; font-size:15px; width:100%"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border:0; padding:0; margin:0">
+                <input type="text" id="Plaza_Address" value="Malasar" style="border:0; text-align:center; font-size:15px; width:100%;"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border:0; padding:0; margin:0; text-align:center;">
+                =====================================
+                </td>
+            </tr>
+            <tr>
+                <td>S/N:</td>
+                <td colspan="2">
+                    <div id="snId" style="width: 80%;float: right; text-align: right;"></div>
+                    <script type="text/javascript">
+                        document.getElementById("snId").innerHTML = Math.floor(1000000000 + Math.random() * 9000000000);
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td colspan="2"><div id="dateId" style="text-align: right;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Expire:</td>
+                <td colspan="2"><div id="expId" style="text-align: right;"></div>
+            </td>
+            <script type="text/javascript">
                     var todayDate = new Date();
                     var n = todayDate.toDateString();
                     var t = todayDate.toLocaleTimeString();
@@ -44,68 +59,75 @@
                     var tt = nextDay.toLocaleTimeString();
                     document.getElementById("expId").innerHTML = nn + " " + tt;
                 </script>
-            </div>
-            <div>
-                <span style="font-size:13px;height:12px;">Plaza: </span>
-                <div  style="width: 80%;float: right; text-align: right; ">
-                    <input type="text" Id="Plaza" value="4" style="border:0;text-align:right;font-size:13px;height:12px;">&nbsp;&nbsp;
-                </div>
-            </div>
-            <div>
-                <span style="font-size:13px;height:12px;">Lane: </span><div  style="width: 80%;float: right; text-align: right; ">
-                    <input type="text" Id="Lane" value="1" style="border:0;text-align:right;font-size:13px;height:12px;">&nbsp;&nbsp;
-                </div>
-            </div>
+            </tr>
+            <tr>
+                <td>Plaza:</td>
+                <td colspan="2" style="text-align:right;">
+                <input type="text" Id="Plaza" value="4" style="border:0; text-align:right;">
+                </td>
+            </tr>
+            <tr>
+                <td>Lane:</td>
+                <td colspan="2" style="text-align:right;">
+                <input type="text" Id="Lane" value="1" style="border:0; text-align:right;">
+                </td>
+            </tr>
+            <tr>
+                <td>Operator:</td>
+                <td colspan="2" style="text-align:right;">
+                <input type="text" Id="Operator_Name" value="Prem Chand" style="border:0;text-align:right;">
+                </td>
+            </tr>
+            <tr>
+                <td>Vehicle Class:</td>
+                <td colspan="2" style="text-align:right;">
+                <input type="text" Id="Vehicle_Class" value="MultiAxle" style="border:0;text-align:right;">
+                </td>
+            </tr>
+            <tr>
+                <td>Pay Method:</td>
+                <td colspan="2" style="text-align:right;">
+                <input type="text" Id="Payment_Method" value="Cash" style="border:0;text-align:right;">
+                </td>
+            </tr>
+            <tr>
+                <td style="border:0px;">Pass Type:</td>
+                <td colspan="2" style="text-align:right; border:0px;">
+                <input type="text" Id="Pass_Type" value="Single" style="border:0;text-align:right;">
+                </td> 
+            </tr>
+            <tr>
+                <td>Journey:</td>
+                <td colspan="2" style="text-align:right;">
+                <input type="text" Id="Journey" value="Sardarshahar to Kishangarh" style="border:0;text-align:right;">
+                </td>
+            </tr>
+            <tr>
+                <td>Direction:</td>
+                <td colspan="2" style="text-align:right;">
+                <input type="text" Id="Direction" value="Southbound" style="border:0;text-align:right;">    
+                </td>
+            </tr>
+            <tr>
+                <td  style="font-weight:bold;">Amount Paid:</td>
+                <td colspan="2" style="text-align:right;">
+                <input type="text" Id="Amount_Paid" value="Rs. 1,500.00" style="border:0;text-align:right;font-weight:bold;">
+                </td>
+            </tr>
+            <tr>
+                <td>Vehicle Regn:</td>
+                <td colspan="2" style="text-align:right;">
+                <input type="text" Id="Vehicle_Regn" value="RJ09 RT0799" style="border:0;text-align:right;">    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border:0; padding:0; margin:0; text-align:center;">=====================================</td>
+            </tr>
+           <tr>
+                <td colspan="3" style="border:0; padding:0; margin:0; text-align:left;">Emergency Contact:<div id="Emergency_Contact" style="float: right; text-align: right; ">9799492501/1, 9799492501/2</div></td>
+            </tr>
             
-            <div>
-                <span style="font-size:13px;height:12px;">Operator Name: </span><div style="width: 55%;float: right; text-align: right; ">
-                    <input type="text" Id="Operator_Name" value="Prem Chand" style="border:0;text-align:right;font-size:13px;height:12px;">
-                </div>
-            </div>
-            <div>
-                <span style="font-size:13px;height:12px;">Vehicle Class: </span><div  style="width: 55%;float: right; text-align: right; ">
-                    <input type="text" Id="Vehicle_Class" value="MultiAxle" style="border:0;text-align:right;font-size:13px;height:12px;">
-                </div>
-            </div>
-            <div>
-                <span style="font-size:13px;height:12px;">Payment Method: </span><div  style="width: 53%;float: right; text-align: right; ">
-                    <input type="text" Id="Payment_Method" value="Cash" style="border:0;text-align:right;font-size:13px;height:12px; width:120px;">
-                </div>
-            </div>
-            <div>
-                <span style="font-size:13px;height:12px;">Pass Type: </span><div  style="width: 55%;float: right; text-align: right; ">
-                    <input type="text" Id="Pass_Type" value="Single" style="border:0;text-align:right;font-size:13px;height:12px;">
-                </div>
-            </div>
-             <div>
-                <span style="font-size:13px;height:12px;">Journey: </span><div  style="width: 70%;float: right; text-align: right; ">
-                    <input type="text" Id="Journey" value="Sardarshahar to Kishangarh" style="border:0;text-align:right;font-size:13px;height:12px;width:170px;">
-                </div>
-            </div>
-            
-            <div>
-                <span style="font-size:13px;height:12px;">Direction: </span><div  style="width: 70%;float: right; text-align: right; ">
-                    <input type="text" Id="Direction" value="Southbound" style="border:0;text-align:right;font-size:13px;height:12px;width:170px;">
-                </div>
-            </div>
-            <br/>
-            <div style="font-weight:bold">
-                <span style="font-size:13px;height:12px;">Amount Paid: </span><div  style="width: 60%;float: right; text-align: right; ">
-                    <input type="text" Id="Amount_Paid" value="Rs. 1,500.00" style="border:0;text-align:right;font-size:13px;height:12px;width:150px;font-weight:bold;">
-                </div>
-            </div>
-            <br/>
-            <div>
-                <span style="font-size:13px;height:12px;">Vehicle Regn: </span><div style="width: 55%;float: right; text-align: right; ">
-                    <input type="text" Id="Vehicle_Regn" value="RJ09RT0799" style="border:0;text-align:right;font-size:13px;height:12px;width:145px;">
-                </div>
-            </div>
-            <div style="text-align:center;">=============================</div>
-            <div>
-                <span style="font-size:13px;height:12px;">Emergency Contact: </span>
-                <div id="Emergency_Contact" style="width: 40%;float: right; text-align: right; ">9799492501/1</br/>9799492501/2</div>
-            </div>
-        </div>
+        </table>
         
         <center><svg id="barcode"></svg></center>
         <script>
