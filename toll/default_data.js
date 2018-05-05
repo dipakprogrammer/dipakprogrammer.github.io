@@ -12,7 +12,7 @@ var defaultDataArray = [
 "Direction": "Southbound",
 "Amount_Paid": "Rs. 1,500.00",
 "Vehicle_Regn": "RJ09 RT0799",
-"Emergency_Contact_1": "9799492501/1",
+"Emergency_Contact_1": "9799042301/2",
 "Emergency_Contact_2": "9799492501/2"
 }
 ];
