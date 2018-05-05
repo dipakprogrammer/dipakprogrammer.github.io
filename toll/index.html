@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 5px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    font-family: fantasy;
+    
+}
+
+.article {
+    text-align: left;
+}   
+
+header {background: lightcoral;color:white; height: 75px;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>Printing Expert</h1>
+</header>
+
+<nav class="nav">
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="Receipt_1.html">Receipt Type 1</a></li>
+    <li><a href="Receipt_2.html">Receipt Type 2</a></li>
+    <li><a href="#">Contact Us</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <h1>Receipt Type 1</h1>
+  <p style="text-align: justify;margin:15px;">Receipt printing  is the most important part of orgnizatoins like school, college or institute or many other customer facing businesses. Printing receipts is a major activity of any day in any  institute or business. In a school, you will need to receive fees from hundreds of students in a day and issue receipts to them. In a business you might need to collect payments from customers and provide receipts to them.</p>
+    <div style="text-align: center;"><a href="Receipt_1.html"><img src="Receipt_1.png" alt="Print Receipt" width="30%"></a></div>
+<p style="text-align: justify;margin:15px;">This is a prototype of receipt printing. We can build a complete solution if needed to serve end to end business requirement for receipt printing.</p>
+<p><center><strong>Best Supported for specific size receipt printing page and Chrome Browser!</strong></center></p>
+</article>
+<article class="article">
+  <h1>Receipt Type 2</h1>
+  <p style="text-align: justify;margin:15px;">Receipt printing  is the most important part of orgnizatoins like school, college or institute or many other customer facing businesses. Printing receipts is a major activity of any day in any  institute or business. In a school, you will need to receive fees from hundreds of students in a day and issue receipts to them. In a business you might need to collect payments from customers and provide receipts to them.</p>
+    <div style="text-align: center;"><a href="Receipt_2.html"><img src="Receipt_1.png" alt="Print Receipt" width="30%"></a></div>
+<p style="text-align: justify;margin:15px;">This is a prototype of receipt printing. We can build a complete solution if needed to serve end to end business requirement for receipt printing.</p>
+<p><center><strong>Best Supported for specific size receipt printing page and Chrome Browser!</strong></center></p>
+</article>
+
+<footer>Copyright &copy; www.printingexpert.com</footer>
+</div>
+
+</body>
+</html>

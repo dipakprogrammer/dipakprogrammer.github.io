@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Invoice</title>
+		<link rel="stylesheet" href="style.css">
+		<!--<script src="script.js"></script>-->
+        <!--http://lindell.me/JsBarcode/#download-->
+        <script src="JsBarcode.all.min.js"></script>
+       
+        
+	</head>
+	<body style="width:288px; height:580px;">
+        <script src="default_data.js"></script>
+        <br/>
+        <div style="font-size:16px;">
+
+            <div style="text-align:center;">
+            <input type="text" id="Plaza_Name" value="RIDCOR TOLL PLAZA" style="border:0;text-align:center;font-size:15px; width:100%;"><br/>
+            <input type="text" id="Plaza_Address" value="Malasar" style="border:0;text-align:center;font-size:15px;width:100%;"<br/>
+            =============================
+            </div>
+            <div>
+                <span>S/N: </span>
+                <div id="snId" style="width: 80%;float: right; text-align: right;"></div>
+                <script type="text/javascript">
+                    document.getElementById("snId").innerHTML = Math.floor(1000000000 + Math.random() * 9000000000);
+                </script>
+            </div>
+            <div>
+                <span style="font-size:13px;height:12px;">Date: </span>
+                <div id="dateId" style="width: 80%;float: right; text-align: right; font-size:13px;height:12px;"></div>
+                <span style="font-size:13px;height:12px;">Expiry: </span>
+                <div id="expId" style="width: 80%;float: right; text-align: right; font-size:13px;height:12px;"></div>
+                <script type="text/javascript">
+                    var todayDate = new Date();
+                    var n = todayDate.toDateString();
+                    var t = todayDate.toLocaleTimeString();
+                    document.getElementById("dateId").innerHTML = n + " " + t;
+                    
+                    var nextDay = new Date();
+                    nextDay.setDate(todayDate.getDate()+1);
+                    var nn = nextDay.toDateString();
+                    var tt = nextDay.toLocaleTimeString();
+                    document.getElementById("expId").innerHTML = nn + " " + tt;
+                </script>
+            </div>
+            <div>
+                <span style="font-size:13px;height:12px;">Plaza: </span>
+                <div  style="width: 80%;float: right; text-align: right; ">
+                    <input type="text" Id="Plaza" value="4" style="border:0;text-align:right;font-size:13px;height:12px;">&nbsp;&nbsp;
+                </div>
+            </div>
+            <div>
+                <span style="font-size:13px;height:12px;">Lane: </span><div  style="width: 80%;float: right; text-align: right; ">
+                    <input type="text" Id="Lane" value="1" style="border:0;text-align:right;font-size:13px;height:12px;">&nbsp;&nbsp;
+                </div>
+            </div>
+            
+            <div>
+                <span style="font-size:13px;height:12px;">Operator Name: </span><div style="width: 55%;float: right; text-align: right; ">
+                    <input type="text" Id="Operator_Name" value="Prem Chand" style="border:0;text-align:right;font-size:13px;height:12px;">
+                </div>
+            </div>
+            <div>
+                <span style="font-size:13px;height:12px;">Vehicle Class: </span><div  style="width: 55%;float: right; text-align: right; ">
+                    <input type="text" Id="Vehicle_Class" value="MultiAxle" style="border:0;text-align:right;font-size:13px;height:12px;">
+                </div>
+            </div>
+            <div>
+                <span style="font-size:13px;height:12px;">Payment Method: </span><div  style="width: 53%;float: right; text-align: right; ">
+                    <input type="text" Id="Payment_Method" value="Cash" style="border:0;text-align:right;font-size:13px;height:12px; width:120px;">
+                </div>
+            </div>
+            <div>
+                <span style="font-size:13px;height:12px;">Pass Type: </span><div  style="width: 55%;float: right; text-align: right; ">
+                    <input type="text" Id="Pass_Type" value="Single" style="border:0;text-align:right;font-size:13px;height:12px;">
+                </div>
+            </div>
+             <div>
+                <span style="font-size:13px;height:12px;">Journey: </span><div  style="width: 70%;float: right; text-align: right; ">
+                    <input type="text" Id="Journey" value="Sardarshahar to Kishangarh" style="border:0;text-align:right;font-size:13px;height:12px;width:170px;">
+                </div>
+            </div>
+            
+            <div>
+                <span style="font-size:13px;height:12px;">Direction: </span><div  style="width: 70%;float: right; text-align: right; ">
+                    <input type="text" Id="Direction" value="Southbound" style="border:0;text-align:right;font-size:13px;height:12px;width:170px;">
+                </div>
+            </div>
+            <br/>
+            <div style="font-weight:bold">
+                <span style="font-size:13px;height:12px;">Amount Paid: </span><div  style="width: 60%;float: right; text-align: right; ">
+                    <input type="text" Id="Amount_Paid" value="Rs. 1,500.00" style="border:0;text-align:right;font-size:13px;height:12px;width:150px;font-weight:bold;">
+                </div>
+            </div>
+            <br/>
+            <div>
+                <span style="font-size:13px;height:12px;">Vehicle Regn: </span><div style="width: 55%;float: right; text-align: right; ">
+                    <input type="text" Id="Vehicle_Regn" value="RJ09RT0799" style="border:0;text-align:right;font-size:13px;height:12px;width:145px;">
+                </div>
+            </div>
+            <div style="text-align:center;">=============================</div>
+            <div>
+                <span style="font-size:13px;height:12px;">Emergency Contact: </span>
+                <div id="Emergency_Contact" style="width: 40%;float: right; text-align: right; ">9799492501/1</br/>9799492501/2</div>
+            </div>
+        </div>
+        
+        <center><svg id="barcode"></svg></center>
+        <script>
+        //JsBarcode("#barcode", "1234567890");
+        JsBarcode("#barcode", document.getElementById("snId").innerHTML, {
+          //format: "pharmacode",
+          //lineColor: "#0aa",
+            width: 2,
+            height: 40,
+            displayValue: true
+        });
+        </script>
+        <script>
+        function printPage(){
+        window.print();
+        }
+        </script>
+        
+        
+       
+         <script>
+        function funDefaultData(arr) {
+            var i;
+            for(i = 0; i<arr.length; i++) {
+                 
+                document.getElementById("Plaza_Name").value  = arr[i].Plaza_Name;
+                document.getElementById("Plaza_Address").value  = arr[i].Plaza_Address;
+                document.getElementById("Plaza").value  = arr[i].Plaza;
+                document.getElementById("Lane").value = arr[i].Lane;
+                document.getElementById("Operator_Name").value = arr[i].Operator_Name;
+                document.getElementById("Vehicle_Class").value = arr[i].Vehicle_Class;
+                document.getElementById("Payment_Method").value  = arr[i].Payment_Method;
+                document.getElementById("Pass_Type").value  = arr[i].Pass_Type;
+                document.getElementById("Journey").value  = arr[i].Journey;
+                document.getElementById("Direction").value  = arr[i].Direction;
+                document.getElementById("Amount_Paid").value  = arr[i].Amount_Paid;
+                document.getElementById("Vehicle_Regn").value  = arr[i].Vehicle_Regn;
+                document.getElementById("Emergency_Contact").innerHTML  = arr[i].Emergency_Contact;
+            
+            }
+            
+        }
+        </script>
+        <script src="default_data.js"></script>
+        <script>
+        funDefaultData(defaultDataArray);
+        </script>
+        
+        <center>
+            <button type="button" onclick="printPage();" autofocus style="width:100%;height:25px; border:0px; background-color:#F0F0F0">
+                <img src="printer.svg" alt="Print Receipt" height="20px"> 
+            </button>
+            <br/><br/>
+            <button type="button" onClick="window.location.reload();" style="width:100%; height:25px; border:0px; background-color:#F0F0F0"><img src="next.svg" alt="Print Receipt" height="20px"> </button>
+        </center>
+
+	</body>
+</html>
